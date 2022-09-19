@@ -1,0 +1,169 @@
+/* #region Common Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/* #endregion Common Rules */
+
+/* #region Utilities */
+:root {
+    --primary: #9793e5;
+    --secondary: #0084fd;
+    --secondary-soft: #b4ddfe;
+    --accent: #fdc15f;
+    --darker: #000;
+    --dark:#323332;
+    --light: #fffefe;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.d_flex {
+    display: flex;
+}
+/* #endregion Utilities */
+
+/* #region flex grid */
+.container {
+    width: 80%;
+    max-width: 1195px;
+    margin: 0 auto;
+}
+
+.container_fluid{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+    width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+    width: calc((100% / 12) * 12);
+}
+/* #endregion flex grid */
+
+/* #region button */
+.btn {
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+/* #endregion button */
+
+/* #region media screen */
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+/* #endregion media screen */
+
+/* #region debug */
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+/* #endregion debug */
