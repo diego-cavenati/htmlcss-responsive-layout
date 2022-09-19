@@ -168,6 +168,12 @@ button {
     background-color: #0084fd;
     border: 2px solid black;
 }
+
+.debug #strategic_planning div[class*="col"] {
+    height: 100px;
+    background-color: #0084fd;
+    border: 2px solid black;
+}
 /* #endregion debug */
 
 
@@ -182,7 +188,16 @@ header nav {
     flex-direction: row-reverse;
 }
 
+
 /* Main */
 
 /* claim section */
+#claim_section div[class*="col"] {    height: 100px;
+    background-color: var(--secondary-soft);
+}
 
+/* strategic planning */
+#strategic_planning {
+    background-color: var(--primary);
+}
+ 
