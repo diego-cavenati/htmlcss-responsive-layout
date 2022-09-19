@@ -144,6 +144,9 @@ button {
     .lg_col-4 {
         width: calc((100% / 12) * 4);
     }
+    .lg_col-8 {
+        width: calc((100% / 12) * 8);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -151,8 +154,16 @@ button {
         width: calc((100% / 12) * 4);
     }
 
+    .md_col-5 {
+        width: calc((100% / 12) * 5);
+    }
+
     .md_col-6 {
         width: calc((100% / 12) * 6);
+    }
+    
+    .md_col-7 {
+        width: calc((100% / 12) * 7);
     }
 
     .md_col-8 {
@@ -189,6 +200,12 @@ button {
 }
 
 .debug #benefits div[class*="col"] {
+    height: 100px;
+    background-color: #0084fd;
+    border: 2px solid black;
+}
+
+.debug #about_us div[class*="col"] {
     height: 100px;
     background-color: #0084fd;
     border: 2px solid black;
@@ -232,4 +249,22 @@ header nav {
 /* Benefits */
 #benefits {
     background-color: var(--primary);
+}
+
+/* about us */
+#about_us {
+
+}
+
+/* get started  */
+#get_started {
+    background-color: var(--primary);
+}
+
+
+
+
+/* footer  */
+footer {
+    background-color: var(--dark);
 }
