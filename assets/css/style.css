@@ -69,7 +69,6 @@ button {
 /* #region flex grid */
 .container {
     width: 80%;
-    max-width: 1195px;
     margin: 0 auto;
 }
 
@@ -79,9 +78,9 @@ button {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .col-1 {
@@ -155,15 +154,19 @@ button {
 /* #endregion media screen */
 
 /* #region debug */
-@media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 320px) {
-
+.debug header {
+    height: 80px;
 }
 /* #endregion debug */
+
+
+/* Header */
+header {
+    background-color: var(--secondary);
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
