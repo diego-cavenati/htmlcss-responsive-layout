@@ -297,18 +297,16 @@ header nav {
     padding-bottom: 1rem;
 }
 
-
-
-
-
-
-
-
 /* strategic planning */
 #strategic_planning {
     background-color: var(--primary);
 }
- 
+
+.app_development {
+    background-color: var(--light);
+    padding: 2rem;
+    border-radius: 3rem;
+}
 /* Testimonials */
 #testimonials .card {
     display: flex;
