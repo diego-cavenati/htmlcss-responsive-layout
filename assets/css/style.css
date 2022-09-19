@@ -78,9 +78,9 @@ button {
 
 .row {
     display: flex;
-    /* flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .col-1 {
@@ -140,15 +140,20 @@ button {
 /* #endregion button */
 
 /* #region media screen */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (min-width: 768px) {
+    .md_col-8 {
+        width: calc((100% / 12) * 8);
+    }
+    .md_col-4 {
+        width: calc((100% / 12) * 4);
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
 }
 /* #endregion media screen */
@@ -156,6 +161,12 @@ button {
 /* #region debug */
 .debug header {
     height: 80px;
+}
+
+.debug #claim_section div[class*="col"] {
+    height: 100px;
+    background-color: #0084fd;
+    border: 2px solid black;
 }
 /* #endregion debug */
 
@@ -170,3 +181,8 @@ header nav {
     display: flex;
     flex-direction: row-reverse;
 }
+
+/* Main */
+
+/* claim section */
+
