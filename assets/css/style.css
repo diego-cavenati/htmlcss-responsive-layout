@@ -47,6 +47,10 @@ button {
     text-align: right;
 }
 
+.left {
+    text-align: left;
+}
+
 .position_relative {
     position: relative;
 }
@@ -68,7 +72,7 @@ button {
 
 /* #region flex grid */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -133,9 +137,12 @@ button {
 /* #endregion flex grid */
 
 /* #region button */
-.btn {
+.btn_download_app {
+    background-color: var(--secondary);
+    color: var(--light);
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
 }
 /* #endregion button */
 
@@ -147,9 +154,14 @@ button {
     .lg_col-8 {
         width: calc((100% / 12) * 8);
     }
+    #claim_section {
+        padding-top: 1.8rem;
+        padding-bottom: 4rem;
+    }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
     .md_col-4 {
         width: calc((100% / 12) * 4);
     }
@@ -168,6 +180,14 @@ button {
 
     .md_col-8 {
         width: calc((100% / 12) * 8);
+    }
+    #claim_section {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+    #claim_section .col-12.md_col-8 h3 {
+        color: var(--secondary);
+        text-align: left;
     }
 }
 
@@ -224,13 +244,65 @@ header nav {
     flex-direction: row-reverse;
 }
 
-
 /* Main */
 
 /* claim section */
-#claim_section div[class*="col"] {    height: 100px;
-    background-color: var(--secondary-soft);
+#claim_section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
+
+#claim_section .row {
+    gap: 1rem;
+}
+
+#claim_section div[class*="col"] {
+    background-color: var(--secondary-soft);
+    border-radius: 2rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+#claim_section h3 {
+    color: var(--secondary);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#claim_section p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+#claim_section .demo_application p {
+    text-align: left;
+}
+
+#claim_section img {
+    margin-top: 2rem;
+}
+
+.skills_card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: var(--secondary);
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
 
 /* strategic planning */
 #strategic_planning {
@@ -268,3 +340,9 @@ header nav {
 footer {
     background-color: var(--dark);
 }
+
+
+
+
+
+/* and (max-width: 1200px)  */
