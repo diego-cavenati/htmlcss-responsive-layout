@@ -90,7 +90,6 @@ li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 
 .col-1 {
@@ -153,6 +152,13 @@ li {
 .btn_secondary {
     background-color: var(--secondary);
     color: var(--light);
+}
+
+.btn_primary {
+    background-color: var(--primary);
+    margin-top: 1rem;
+    color: var(--light);
+    padding: 0.5rem 2rem;
 }
 
 .btn_light {
@@ -238,6 +244,10 @@ header .main_menu {
     padding: 1rem;
 }
 
+.main_menu a:not(.btn_light) {
+    padding: 1rem;
+    color: var(--light);
+}
 
 /******************* 
        Main 
@@ -414,6 +424,39 @@ header .main_menu {
 /* Benefits */
 #benefits {
     background-color: var(--primary);
+    padding: 3rem 0;
+}
+
+#benefits h2 {
+    color: var(--light);
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#benefits .row {
+    margin: 0 1rem;
+}
+
+.card_number {
+    padding: 2rem;
+    background-color: var(--light);
+    border-radius: 1rem;
+}
+
+.col-12.md_col-6.lg_col-4 {
+    padding: 1rem;
+}
+
+#benefits .number {
+    color: var(--primary);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#benefits h3 {
+    color: var(--primary);
+    padding-bottom: 2rem;
 }
 
 /* about us */
@@ -543,7 +586,7 @@ footer a {
 }
 
 /* #region media screen */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .container {
         max-width: 850px;
     }
@@ -608,7 +651,7 @@ footer a {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
     .container {
         max-width: 1000px;
     }
