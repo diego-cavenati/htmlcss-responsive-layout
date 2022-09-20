@@ -338,13 +338,65 @@ header .main_menu {
 
 
 /* Testimonials */
+#testimonials {
+    padding: 3rem 0;
+}
+
+#testimonials h4, 
+#testimonials h3,
+#testimonials p {
+    display: block;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+#testimonials h4 {
+    font-weight: 400;
+}
+
+#testimonials h3 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
 #testimonials .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
+
+#testimonials .row {
+    row-gap: 1rem;
+}
+
+#testimonials img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#testimonials span {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.name {
+    padding-top: 1rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+
+
+
 
 /* Benefits */
 #benefits {
