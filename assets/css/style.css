@@ -342,10 +342,8 @@ header .main_menu {
     padding: 3rem 0;
 }
 
-#testimonials h4, 
 #testimonials h3,
 #testimonials p {
-    display: block;
     text-align: center;
     padding-bottom: 1.2rem;
 }
@@ -373,13 +371,14 @@ header .main_menu {
 
 #testimonials .row {
     row-gap: 1rem;
+    flex-direction: column;
 }
 
 #testimonials img {
-    border-radius: 50%;
-    aspect-ratio: 1/1;
+    clip-path: circle(39%);
     width: 70%;
     margin-bottom: 1rem;
+    max-width: 200px;
 }
 
 #testimonials span {
@@ -473,6 +472,24 @@ footer a {
 
     .demo_application {
         flex-direction: row;
+    }
+
+    #testimonials .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #testimonials img {
+        margin-bottom: 0rem;
+    }
+    
+    #testimonials span:not(.name){
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        padding: 0 2rem;
     }
 }
 
