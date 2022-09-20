@@ -289,13 +289,54 @@ header .main_menu {
 /* strategic planning */
 #strategic_planning {
     background-color: var(--primary);
+    padding: 3rem 0;
+}
+
+.strategic_planning {
+    color: var(--light);
+}
+
+.strategic_planning img {
+    padding-bottom: 3rem;
+}
+
+.strategic_planning h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.strategic_planning p {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    line-height: 1rem;
 }
 
 .app_development {
     background-color: var(--light);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 3rem;
+    text-align: center;
 }
+
+.app_development h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.app_development p {
+    font-size: 0.7rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.app_development i {
+    font-size: 0.7rem;
+    background-color: var(--primary);
+    padding: 0.7rem 0.8rem;
+    border-radius: 50%;
+}
+
+
 /* Testimonials */
 #testimonials .card {
     display: flex;
@@ -322,8 +363,9 @@ header .main_menu {
 
 
 
-
-/* footer  */
+/******************* 
+       Footer
+********************/
 footer {
     background-color: var(--dark);
     color: var(--light);
@@ -337,25 +379,6 @@ footer span {
 footer a {
     color: var(--primary);
 }
-
-
-.container_prova {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.row_prova {
-    display: flex;
-    margin: 0;
-    gap: 1rem;
-}
-
-.container_prova .col-4 {
-    height: 50px;
-    background-color: #0084fd;
-    border: 2px solid black;
-}
-
 
 /* #region media screen */
 @media screen and (min-width: 768px) {
@@ -405,7 +428,12 @@ footer a {
     .container {
         max-width: 1000px;
     }
+
     .lg_col-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .lg_col-5 {
         width: calc((100% / 12) * 4);
     }
 
@@ -431,6 +459,20 @@ footer a {
         margin-top: 2rem;
         align-self: flex-end;
         max-width: 250px;
+    }
+    
+    #strategic_planning .row {
+        gap: 2rem;
+    }
+
+    #strategic_planning .lg_col-5:last-child {
+        position: relative;
+    }
+
+    .app_development {
+        position: relative;
+        bottom: -3rem;
+        left: 0;
     }
 }
 /* #endregion media screen */
