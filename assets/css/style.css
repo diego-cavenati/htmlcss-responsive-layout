@@ -168,6 +168,16 @@ li {
     font-weight: 700;
     width: 30%;
 }
+
+.btn_linkedin {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 70%;
+}
+
 /* #endregion button */
 
 /* #region debug */
@@ -408,7 +418,60 @@ header .main_menu {
 
 /* about us */
 #about_us {
+    padding: 4rem 0;
+}
 
+#about_us h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    padding-bottom: 2rem;
+}
+
+#about_us p {
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+    line-height: 2.2rem;
+}
+
+#about_us .row {
+    column-gap: 4rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about_us .col-12.md_col-5.lg_col-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#about_us .quotes > i {
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+.main_photo {
+    position: relative;
+}
+
+.quotes {
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+
+#about_us img {
+    clip-path: circle(50%);
+    margin-bottom: 1rem;
+    max-width: 200px;
+}
+
+#about_us span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--primary);
+    padding-bottom: 1rem;
 }
 
 /* get started  */
@@ -538,6 +601,10 @@ footer a {
         font-size: 0.9rem;
         line-height: 1.4rem;
         padding: 0 2rem;
+    }
+
+    #about_us .row {
+        flex-direction: row;
     }
 }
 
